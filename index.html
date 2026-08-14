@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="그로우파머스는 농부와 생산자의 좋은 상품을 시장에서 선택받는 브랜드로 성장시키는 로컬 브랜드 스튜디오입니다." />
-  <meta name="theme-color" content="#f4f2e9" />
+  <meta name="description" content="그로우파머스는 농부와 생산자의 상품을 브랜드로 키우는 디자인 스튜디오입니다. 브랜드 기획부터 패키지, 제품 콘텐츠, 상세페이지, 홍보물까지 하나의 흐름으로 설계합니다." />
+  <meta name="theme-color" content="#f5f3ea" />
   <title>그로우파머스 — 농부의 상품을 브랜드로 키웁니다</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
@@ -14,7 +14,7 @@
   <div class="page-shell">
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="그로우파머스 홈">
-        <span class="brand-mark" aria-hidden="true">GF</span>
+        <span class="brand-symbol" aria-hidden="true"><i></i><i></i></span>
         <span class="brand-name">그로우파머스</span>
       </a>
 
@@ -27,7 +27,7 @@
       </nav>
 
       <div class="header-actions">
-        <button class="text-button js-open-register" type="button">농장 등록하기</button>
+        <button class="register-link js-open-register" type="button">농장 등록하기</button>
         <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -48,11 +48,11 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">LOCAL BRAND GROWTH STUDIO</p>
+          <p class="eyebrow">농부와 생산자를 위한 브랜드 스튜디오</p>
           <h1 id="hero-title">농부의 상품을<br />브랜드로 키웁니다.</h1>
           <p class="hero-description">
-            좋은 농산물과 로컬 상품이 더 많은 사람에게 발견되고 선택될 수 있도록,<br class="desktop-only" />
-            브랜드 기획부터 패키지, 콘텐츠, 판매 준비까지 함께합니다.
+            좋은 농산물과 로컬 상품이 시장에서 더 잘 보이고, 더 잘 팔릴 수 있도록<br class="desktop-only" />
+            브랜드 기획부터 패키지 디자인, 제품 콘텐츠, 상세페이지, 홍보물까지 하나의 흐름으로 설계합니다.
           </p>
           <div class="hero-actions">
             <a class="button button-dark" href="#contact">브랜드 상담하기</a>
@@ -60,105 +60,102 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="그로우파머스 브랜드 성장 구조">
-          <div class="hero-orbit orbit-one"></div>
-          <div class="hero-orbit orbit-two"></div>
-          <div class="crop-shape crop-a"></div>
-          <div class="crop-shape crop-b"></div>
-          <div class="crop-shape crop-c"></div>
-          <div class="hero-card hero-card-left">
-            <span>생산자의 시간</span>
-            <strong>상품</strong>
-          </div>
-          <div class="hero-card hero-card-right">
-            <span>시장과 만나는 언어</span>
-            <strong>브랜드</strong>
-          </div>
-          <span class="hero-arrow" aria-hidden="true">↗</span>
-          <p class="hero-visual-caption">좋은 상품에서<br />오래가는 브랜드까지.</p>
+        <div class="hero-visual" aria-label="상품이 브랜드로 성장하는 과정을 표현한 그래픽">
+          <div class="hero-grid-lines" aria-hidden="true"></div>
+          <div class="hero-word hero-word-a">상품</div>
+          <div class="hero-word hero-word-b">브랜드</div>
+          <div class="hero-seed seed-a" aria-hidden="true"></div>
+          <div class="hero-seed seed-b" aria-hidden="true"></div>
+          <div class="hero-seed seed-c" aria-hidden="true"></div>
+          <div class="hero-path" aria-hidden="true"><span></span></div>
+          <p class="hero-visual-note">생산자의 시간과<br />지역의 가치를<br />시장에 닿는 모습으로.</p>
         </div>
 
-        <div class="hero-footer">
-          <span>농부 · 생산자 · 농업법인 · 로컬 브랜드 · 지역기관</span>
-          <a href="#about">아래로 보기 ↓</a>
+        <div class="hero-bottom">
+          <span>농부 · 생산자 · 농업법인 · 협동조합 · 지역기관 · 로컬 브랜드</span>
+          <span>좋은 상품에서 오래가는 브랜드까지</span>
         </div>
       </section>
 
-      <section class="statement section-pad" id="about">
-        <p class="section-label">그로우파머스</p>
-        <div class="statement-grid">
-          <h2>좋은 상품에는<br />좋은 브랜드가 필요합니다.</h2>
-          <div class="statement-copy">
-            <p>
-              좋은 농산물이 반드시 좋은 브랜드가 되는 것은 아닙니다. 그로우파머스는 생산자의 시간과 지역의 가치,
-              상품의 특징을 발견하고 사람들이 이해하고 선택할 수 있는 브랜드의 언어로 바꿉니다.
+      <section class="about section-pad" id="about">
+        <div class="section-kicker">
+          <span>그로우파머스</span>
+          <span>01</span>
+        </div>
+        <div class="about-grid">
+          <h2>농산물을<br />하나의 브랜드로<br />바라봅니다.</h2>
+          <div class="about-copy">
+            <p class="lead">
+              그로우파머스는 농부와 생산자의 상품을 브랜드로 키우는 디자인 스튜디오입니다.
             </p>
             <p>
-              단순히 보기 좋은 디자인을 만드는 데서 멈추지 않습니다. 상품의 방향을 정리하고, 실제 제작과 판매에 필요한
-              패키지와 콘텐츠까지 하나의 흐름으로 설계합니다.
+              단순히 보기 좋은 디자인을 만드는 것이 아니라 상품의 특징과 생산자의 이야기, 판매 환경까지 함께 고려합니다.
+              브랜딩과 패키지 경험을 가진 디자인 전문가가 제품의 방향을 정리하고 라벨·단상자·파우치·쇼핑백·리플렛 등 필요한 인쇄 제작물까지 유연하게 연결합니다.
+            </p>
+            <p>
+              온라인 판매와 홍보에 필요한 제품 연출컷, 상세페이지, SNS 이미지, 홍보 콘텐츠까지 함께 구성하여 농부의 상품이 더 많은 사람들에게 제대로 전달될 수 있도록 돕습니다.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="grow-strip" aria-label="그로우파머스 핵심 가치">
-        <div class="grow-track">
-          <span>지역을 키웁니다.</span><i>•</i>
-          <span>상품을 키웁니다.</span><i>•</i>
-          <span>이야기를 키웁니다.</span><i>•</i>
-          <span>브랜드를 키웁니다.</span><i>•</i>
+      <section class="grow-band" aria-label="그로우파머스가 키우는 가치">
+        <div class="grow-band-track">
+          <span>상품을 키웁니다</span><i>↗</i>
+          <span>이야기를 키웁니다</span><i>↗</i>
+          <span>브랜드를 키웁니다</span><i>↗</i>
+          <span>지역을 키웁니다</span><i>↗</i>
+          <span>상품을 키웁니다</span><i>↗</i>
+          <span>이야기를 키웁니다</span><i>↗</i>
         </div>
       </section>
 
       <section class="service section-pad" id="service">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-label">우리가 하는 일</p>
-            <h2>상품 하나가 브랜드가 되기까지.</h2>
-          </div>
-          <p class="section-note">기획부터 실제 제작과 시장에 필요한 콘텐츠까지 연결합니다.</p>
+        <div class="section-kicker">
+          <span>우리가 하는 일</span>
+          <span>02</span>
+        </div>
+        <div class="section-head">
+          <h2>상품이 시장에 닿는 데<br />필요한 일을 함께합니다.</h2>
+          <p>브랜드의 시작부터 패키지 제작과 온라인 판매에 필요한 콘텐츠까지 하나의 방향으로 연결합니다.</p>
         </div>
 
         <div class="service-list">
-          <article class="service-row">
-            <span class="service-number">01</span>
-            <h3>브랜드 방향 잡기</h3>
-            <p>브랜드 진단 · 시장과 경쟁 제품 살펴보기 · 이름과 이야기 · 브랜드 방향</p>
-            <span class="service-keyword">생각을 정리합니다.</span>
+          <article>
+            <span class="service-no">01</span>
+            <div><h3>브랜드 기획</h3><p>상품의 특징, 생산자의 이야기, 판매 환경을 살펴보고 브랜드가 나아갈 방향을 정리합니다.</p></div>
+            <em>방향을 정합니다</em>
           </article>
-          <article class="service-row">
-            <span class="service-number">02</span>
-            <h3>브랜드 만들기</h3>
-            <p>로고 · 색상 · 글꼴 · 그래픽 · 브랜드 사용 기준</p>
-            <span class="service-keyword">모습을 만듭니다.</span>
+          <article>
+            <span class="service-no">02</span>
+            <div><h3>브랜드 디자인</h3><p>이름, 로고, 색상, 글꼴, 그래픽 요소를 정리해 하나의 일관된 브랜드 모습을 만듭니다.</p></div>
+            <em>모습을 만듭니다</em>
           </article>
-          <article class="service-row">
-            <span class="service-number">03</span>
-            <h3>패키지 디자인</h3>
-            <p>라벨 · 파우치 · 단상자 · 선물세트 · 쇼핑백 · 리플렛</p>
-            <span class="service-keyword">선택받게 만듭니다.</span>
+          <article>
+            <span class="service-no">03</span>
+            <div><h3>패키지 디자인</h3><p>라벨, 단상자, 파우치, 선물세트, 쇼핑백, 리플렛 등 상품에 필요한 인쇄물을 설계합니다.</p></div>
+            <em>상품을 완성합니다</em>
           </article>
-          <article class="service-row">
-            <span class="service-number">04</span>
-            <h3>제품 콘텐츠</h3>
-            <p>제품 연출 · 촬영 방향 · 상세페이지 · SNS 이미지 · 홍보물</p>
-            <span class="service-keyword">가치를 보여줍니다.</span>
+          <article>
+            <span class="service-no">04</span>
+            <div><h3>제품 콘텐츠</h3><p>제품 연출컷, 상세페이지, SNS 이미지와 홍보 콘텐츠를 구성해 상품의 장점을 쉽게 전달합니다.</p></div>
+            <em>가치를 보여줍니다</em>
           </article>
-          <article class="service-row">
-            <span class="service-number">05</span>
-            <h3>제작과 출시 준비</h3>
-            <p>인쇄 감리 · 패키지 제작 · 라벨 제작 · 후가공 · 제작처 연결</p>
-            <span class="service-keyword">시장과 연결합니다.</span>
+          <article>
+            <span class="service-no">05</span>
+            <div><h3>제작 연결</h3><p>디자인에서 끝나지 않도록 인쇄 방식과 후가공, 제작 사양을 정리하고 실제 제작 과정까지 연결합니다.</p></div>
+            <em>시장과 연결합니다</em>
           </article>
         </div>
       </section>
 
       <section class="work section-pad" id="work">
-        <div class="section-heading-row work-heading">
-          <div>
-            <p class="section-label">프로젝트</p>
-            <h2>좋은 상품이<br />새로운 모습으로 자랍니다.</h2>
-          </div>
+        <div class="section-kicker section-kicker-light">
+          <span>프로젝트</span>
+          <span>03 · 노션 포트폴리오 36건</span>
+        </div>
+        <div class="section-head section-head-light">
+          <h2>실제 상품이<br />브랜드가 된 모습.</h2>
           <div class="work-filter" role="group" aria-label="프로젝트 필터">
             <button class="is-active" data-filter="all" type="button">전체</button>
             <button data-filter="brand" type="button">브랜드</button>
@@ -168,221 +165,268 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card project-large" data-category="brand package">
-            <div class="project-art art-honey" aria-hidden="true">
-              <div class="jar jar-a"><span>지리산</span></div>
-              <div class="jar jar-b"><span>꿀</span></div>
-              <div class="jar jar-c"><span>선물</span></div>
+          <article class="project-card project-card-large" data-category="package content">
+            <div class="project-visual project-oyster">
+              <span class="project-type">냉동 수산물</span>
+              <strong>FROZEN<br />COOKED<br />OYSTER</strong>
+              <i>01</i>
             </div>
-            <div class="project-meta">
-              <h3>지리산의 계절을 담은 꿀 선물세트</h3>
-              <p>브랜드 · 패키지</p>
+            <div class="project-info">
+              <h3>블루 컬러와 실버 파우치로 냉동 굴의 신선함을 직관적으로 전달하다</h3>
+              <p>냉동 수산물이 가져야 할 차가운 신선함과 보관 안정성을 블루 컬러, 실버 재질, 원물 이미지로 정리한 패키지 디자인.</p>
+              <span>패키지 · 콘텐츠</span>
             </div>
           </article>
 
-          <article class="project-card" data-category="package content">
-            <div class="project-art art-seafood" aria-hidden="true">
-              <div class="pack pack-silver"></div>
-              <div class="pack pack-blue">FRESH<br />OYSTER</div>
+          <article class="project-card" data-category="brand package content">
+            <div class="project-visual project-local">
+              <span class="project-type">지역 식재료</span>
+              <strong>지역의<br />건강한<br />식탁</strong>
+              <i>02</i>
             </div>
-            <div class="project-meta">
-              <h3>차가운 신선함을 담은 수산물 패키지</h3>
-              <p>패키지 · 콘텐츠</p>
+            <div class="project-info">
+              <h3>지역 식재료의 건강한 식탁 이미지를 담은 브랜드 디자인</h3>
+              <p>고춧가루, 멸치, 차, 장아찌처럼 서로 다른 지역 식재료를 자연 풍경과 절제된 라벨 시스템으로 하나의 흐름에 묶었습니다.</p>
+              <span>브랜드 · 패키지 · 콘텐츠</span>
             </div>
           </article>
 
           <article class="project-card" data-category="brand package">
-            <div class="project-art art-salted" aria-hidden="true">
-              <div class="box-cream">오젓</div>
-              <div class="glass-jar"><span>새우젓</span></div>
+            <div class="project-visual project-jeotgal">
+              <span class="project-type">로컬 젓갈</span>
+              <strong>바다의<br />감칠맛을<br />가볍게</strong>
+              <i>03</i>
             </div>
-            <div class="project-meta">
-              <h3>정갈한 식탁을 위한 새우젓 브랜드</h3>
-              <p>브랜드 · 패키지</p>
+            <div class="project-info">
+              <h3>바다의 감칠맛을 친근한 프리미엄 식탁 브랜드로 풀어낸 디자인</h3>
+              <p>여러 젓갈 제품을 컬러 라벨 시스템과 부드러운 핑크 톤으로 정리해 친근하고 세련된 식탁 경험으로 전개했습니다.</p>
+              <span>브랜드 · 패키지</span>
             </div>
           </article>
 
-          <article class="project-card project-wide" data-category="brand package content">
-            <div class="project-art art-local" aria-hidden="true">
-              <div class="landscape-line mountain-one"></div>
-              <div class="landscape-line mountain-two"></div>
-              <div class="local-package local-one">차</div>
-              <div class="local-package local-two">장</div>
-              <div class="local-package local-three">식재료</div>
-              <span class="local-caption">지역에서 얻은 재료를<br />하나의 브랜드로.</span>
+          <article class="project-card project-card-wide" data-category="brand package content">
+            <div class="project-visual project-jujube">
+              <span class="project-type">진천 로컬 상품</span>
+              <strong>대추와<br />노루궁뎅이<br />버섯</strong>
+              <i>04</i>
             </div>
-            <div class="project-meta">
-              <h3>지역 식재료를 하나의 흐름으로 묶다</h3>
-              <p>브랜드 · 패키지 · 콘텐츠</p>
+            <div class="project-info">
+              <h3>대추와 노루궁뎅이버섯을 친근하게 풀어낸 건강즙 브랜드 디자인</h3>
+              <p>진천 대추와 노루궁뎅이버섯의 원료를 캐릭터와 따뜻한 크림·브라운 톤으로 쉽게 이해할 수 있도록 구성했습니다.</p>
+              <span>브랜드 · 패키지 · 콘텐츠</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="brand package">
+            <div class="project-visual project-ginseng-pear">
+              <span class="project-type">건강 선물</span>
+              <strong>홍삼과<br />배의<br />깊이</strong>
+              <i>05</i>
+            </div>
+            <div class="project-info">
+              <h3>홍삼과 배의 깊이를 정갈하게 담은 선물 브랜드 디자인</h3>
+              <p>유기농 홍삼과 배 농축액의 건강한 이미지와 선물 제품의 품격을 화이트, 살구빛, 브라운 톤으로 정리했습니다.</p>
+              <span>브랜드 · 패키지</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="package">
+            <div class="project-visual project-ginger">
+              <span class="project-type">생강청</span>
+              <strong>생강의<br />따뜻한<br />온기</strong>
+              <i>06</i>
+            </div>
+            <div class="project-info">
+              <h3>생강의 온기를 부드럽고 정갈한 선물 이미지로 담은 패키지 디자인</h3>
+              <p>국산 생강의 따뜻하고 건강한 인상을 베이지와 골드 계열의 차분한 선물 패키지로 정리했습니다.</p>
+              <span>패키지</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-large" data-category="brand package">
+            <div class="project-visual project-blackginseng">
+              <span class="project-type">프리미엄 건강식품</span>
+              <strong>흑삼의<br />깊이를<br />검게</strong>
+              <i>07</i>
+            </div>
+            <div class="project-info">
+              <h3>흑삼의 깊이를 블랙 무드로 표현한 프리미엄 선물 패키지 디자인</h3>
+              <p>깊이 있는 블랙 바탕과 흰색 서체, 나무 실루엣으로 흑삼의 묵직한 원물감과 선물 제품의 품격을 함께 담았습니다.</p>
+              <span>브랜드 · 패키지</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="package">
+            <div class="project-visual project-meju">
+              <span class="project-type">장류</span>
+              <strong>콩과<br />메주의<br />담백함</strong>
+              <i>08</i>
+            </div>
+            <div class="project-info">
+              <h3>콩과 메주의 담백함을 정갈하게 담은 패키지 디자인</h3>
+              <p>장류의 전통성과 신뢰감을 유지하면서 화이트와 브라운 중심의 깨끗한 인상으로 선물형 패키지를 정리했습니다.</p>
+              <span>패키지</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="brand package">
+            <div class="project-visual project-shrimp">
+              <span class="project-type">새우젓</span>
+              <strong>정갈한<br />새우젓의<br />신선함</strong>
+              <i>09</i>
+            </div>
+            <div class="project-info">
+              <h3>크림 톤 패키지와 투명 용기로 정갈한 새우젓의 신선함을 담다</h3>
+              <p>강한 전통 식품 이미지를 덜어내고 크림 톤과 간결한 심볼로 깨끗한 주방 오브제처럼 보이도록 디자인했습니다.</p>
+              <span>브랜드 · 패키지</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-wide" data-category="brand package">
+            <div class="project-visual project-honey">
+              <span class="project-type">지리산 꿀</span>
+              <strong>지리산의<br />세 가지<br />계절</strong>
+              <i>10</i>
+            </div>
+            <div class="project-info">
+              <h3>지리산의 계절을 담은 프리미엄 허니 선물세트 디자인</h3>
+              <p>아카시아·야생화·밤 꿀을 따뜻한 오렌지 컬러와 정돈된 선물세트 구조로 표현해 자연 원료의 고급스러움을 담았습니다.</p>
+              <span>브랜드 · 패키지</span>
             </div>
           </article>
         </div>
+
+        <div class="work-note">
+          <p>현재 노션 포트폴리오에는 총 36개의 작업이 정리되어 있습니다. 홈페이지에는 대표 작업을 선별해 보여주고, 이후 전체 프로젝트 페이지로 확장할 수 있도록 구성합니다.</p>
+          <span>36 PROJECTS / GROW FARMERS ARCHIVE</span>
+        </div>
       </section>
 
-      <section class="from-to section-pad">
-        <p class="section-label">상품에서 브랜드까지</p>
-        <div class="from-to-grid">
-          <div class="from-panel">
-            <span>시작</span>
-            <strong>좋은 농산물</strong>
-            <ul>
-              <li>생산자의 경험</li>
-              <li>지역의 환경</li>
-              <li>상품의 특징</li>
-            </ul>
-          </div>
-          <div class="transform-arrow" aria-hidden="true">→</div>
-          <div class="to-panel">
-            <span>성장</span>
-            <strong>선택받는 브랜드</strong>
-            <div class="brand-pills">
-              <em>이름</em><em>이야기</em><em>로고</em><em>패키지</em><em>사진</em><em>상세페이지</em>
-            </div>
-          </div>
+      <section class="why section-pad">
+        <div class="section-kicker">
+          <span>그로우파머스가 보는 것</span>
+          <span>04</span>
+        </div>
+        <div class="why-title">
+          <h2>농산물은<br />제품만으로 설명되지 않습니다.</h2>
+        </div>
+        <div class="why-grid">
+          <article><span>01</span><h3>상품</h3><p>맛, 원료, 품종, 생산 방식과 같은 상품 자체의 특징을 먼저 이해합니다.</p></article>
+          <article><span>02</span><h3>사람</h3><p>누가, 어떤 생각과 시간으로 만들었는지 생산자의 이야기를 발견합니다.</p></article>
+          <article><span>03</span><h3>지역</h3><p>상품이 자라난 지역과 환경이 가진 차별점을 브랜드의 배경으로 연결합니다.</p></article>
+          <article><span>04</span><h3>시장</h3><p>어디서 누구에게 판매될지 살펴보고 실제 선택받을 수 있는 모습으로 정리합니다.</p></article>
         </div>
       </section>
 
       <section class="process section-pad">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-label">함께 키우는 과정</p>
-            <h2>발견하고, 정리하고,<br />키우고, 시장에 내놓습니다.</h2>
-          </div>
+        <div class="section-kicker">
+          <span>함께 키우는 과정</span>
+          <span>05</span>
         </div>
-        <div class="process-grid">
-          <article><span>01</span><h3>발견합니다</h3><p>상품과 생산자의 이야기를 듣고 가능성을 찾습니다.</p></article>
-          <article><span>02</span><h3>정리합니다</h3><p>시장과 고객을 살펴보고 브랜드가 나아갈 방향을 정합니다.</p></article>
-          <article><span>03</span><h3>키웁니다</h3><p>이름, 모습, 패키지, 콘텐츠를 하나의 브랜드로 연결합니다.</p></article>
-          <article><span>04</span><h3>내놓습니다</h3><p>실제 제작과 판매 환경에 맞춰 시장에 나갈 준비를 마칩니다.</p></article>
+        <div class="section-head">
+          <h2>좋은 상품을 발견하고<br />브랜드로 자라게 합니다.</h2>
+          <p>정해진 디자인을 덧씌우기보다, 상품과 생산자에게 맞는 방향을 함께 찾는 것부터 시작합니다.</p>
+        </div>
+        <div class="process-list">
+          <article><span>01</span><h3>이야기를 듣습니다</h3><p>농장과 상품, 생산 과정, 현재 판매 환경을 확인합니다.</p></article>
+          <article><span>02</span><h3>방향을 정합니다</h3><p>상품의 장점과 고객, 경쟁 환경을 바탕으로 브랜드 방향을 정리합니다.</p></article>
+          <article><span>03</span><h3>모습을 만듭니다</h3><p>브랜드와 패키지, 필요한 인쇄물과 콘텐츠를 하나의 흐름으로 제작합니다.</p></article>
+          <article><span>04</span><h3>시장에 연결합니다</h3><p>온라인과 오프라인에서 상품이 제대로 전달될 수 있도록 출시 준비를 돕습니다.</p></article>
         </div>
       </section>
 
       <section class="farms section-pad" id="farms">
         <div class="farms-intro">
-          <p class="section-label">농장과 브랜드</p>
-          <h2>전국의 좋은 농장과<br />생산자를 기다립니다.</h2>
+          <div class="section-kicker section-kicker-light">
+            <span>농장과 브랜드</span>
+            <span>06</span>
+          </div>
+          <h2>당신의 농장과 상품을<br />그로우파머스에 알려주세요.</h2>
           <p>
-            아직 브랜드가 없어도 괜찮습니다. 지금 생산하고 있는 상품과 농장의 이야기를 알려주세요.
-            그로우파머스의 농장 아카이브에 등록하고, 필요한 경우 브랜드 성장 프로젝트로 연결합니다.
+            아직 브랜드가 없어도 괜찮습니다. 어떤 지역에서 무엇을 만들고 있는지, 어떤 고민이 있는지 등록해주세요.
+            농장과 생산자의 이야기가 쌓이면 앞으로 지역과 품목을 중심으로 농장을 발견할 수 있는 공간으로 확장합니다.
           </p>
-          <button class="button button-light js-open-register" type="button">우리 농장 등록하기</button>
+          <button class="button button-light js-open-register" type="button">농장 등록하기</button>
         </div>
-        <div class="farm-board" aria-label="농장 등록 흐름">
-          <div class="farm-card farm-card-featured">
-            <span class="farm-location">충북 · 진천</span>
-            <div class="farm-symbol symbol-apple">●</div>
-            <h3>생산자의 이름이<br />곧 브랜드가 되도록.</h3>
-            <p>농장 정보와 생산품을 등록하면 그로우파머스가 검토 후 아카이브에 소개합니다.</p>
-          </div>
-          <div class="farm-mini-grid">
-            <div class="farm-mini"><span>01</span><strong>농장 등록</strong><p>기본 정보와 생산품을 알려주세요.</p></div>
-            <div class="farm-mini"><span>02</span><strong>내용 확인</strong><p>그로우파머스가 내용을 살펴봅니다.</p></div>
-            <div class="farm-mini"><span>03</span><strong>농장 소개</strong><p>선정된 농장은 사이트에 소개됩니다.</p></div>
-            <div class="farm-mini"><span>04</span><strong>성장 연결</strong><p>필요하면 브랜딩 프로젝트를 제안합니다.</p></div>
-          </div>
+        <div class="farm-directory-preview" aria-label="향후 농장 아카이브 기능 예시">
+          <div class="directory-head"><span>농장 아카이브</span><span>확장 예정</span></div>
+          <div class="directory-row"><span>충청북도</span><strong>대추 · 버섯 · 쌀 · 과일</strong><i>→</i></div>
+          <div class="directory-row"><span>전라남도</span><strong>수산물 · 차 · 장류 · 농산가공</strong><i>→</i></div>
+          <div class="directory-row"><span>경상남도</span><strong>꿀 · 과일 · 전통식품 · 로컬푸드</strong><i>→</i></div>
+          <div class="directory-row directory-last"><span>전국</span><strong>생산자의 상품과 이야기를 연결합니다</strong><i>↗</i></div>
         </div>
       </section>
 
-      <section class="audience section-pad">
-        <p class="section-label">이런 분들과 함께합니다</p>
-        <div class="audience-list">
-          <span>농부와 농가</span>
-          <span>로컬 생산자</span>
-          <span>농업법인</span>
-          <span>협동조합</span>
-          <span>지역 식품기업</span>
-          <span>농업기술센터</span>
-          <span>지역 공공기관</span>
-          <span>로컬 브랜드</span>
+      <section class="contact" id="contact">
+        <div class="contact-copy">
+          <p>함께하기</p>
+          <h2>좋은 상품을<br />함께 키워볼까요?</h2>
+          <span>브랜드, 패키지, 콘텐츠가 필요한 상품의 이야기를 들려주세요.</span>
         </div>
-      </section>
-
-      <section class="contact section-pad" id="contact">
-        <div class="contact-inner">
-          <p class="section-label">함께하기</p>
-          <h2>당신의 상품에는<br />어떤 이야기가 있나요?</h2>
-          <p>좋은 상품이 오래가는 브랜드가 되는 과정, 그로우파머스가 함께합니다.</p>
-          <div class="contact-actions">
-            <a class="button button-light" href="mailto:?subject=그로우파머스 브랜드 상담 문의">브랜드 상담하기</a>
-            <button class="button button-ghost-light js-open-register" type="button">농장 등록하기</button>
-          </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:hello@9works.kr">브랜드 상담하기</a>
+          <button class="button button-outline-light js-open-register" type="button">농장 등록하기</button>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">
-        <span class="brand-mark">GF</span>
+      <div>
         <strong>그로우파머스</strong>
+        <p>농부와 생산자의 상품을 브랜드로 키웁니다.</p>
       </div>
-      <p>농부의 상품을 브랜드로 키웁니다.</p>
-      <div class="footer-links">
-        <a href="#service">우리가 하는 일</a>
-        <a href="#work">프로젝트</a>
-        <button class="link-button js-open-register" type="button">농장 등록하기</button>
+      <div class="footer-meta">
+        <span>브랜드 기획 · 패키지 디자인 · 제품 콘텐츠 · 상세페이지 · 홍보물</span>
+        <span>© GROW FARMERS</span>
       </div>
-      <small>© 2026 GROW FARMERS. ALL RIGHTS RESERVED.</small>
     </footer>
   </div>
 
-  <div class="modal" id="farmRegisterModal" aria-hidden="true">
-    <div class="modal-backdrop js-close-register"></div>
-    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="register-title">
-      <div class="modal-header">
+  <div class="register-modal" id="farmRegisterModal" aria-hidden="true">
+    <button class="register-backdrop js-close-register" type="button" aria-label="농장 등록 닫기"></button>
+    <section class="register-panel" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+      <div class="register-panel-head">
         <div>
-          <p class="section-label">농장 등록하기</p>
-          <h2 id="register-title">우리 농장을<br />소개해주세요.</h2>
+          <p>농장 등록하기</p>
+          <h2 id="registerTitle">당신의 농장과<br />상품을 알려주세요.</h2>
         </div>
-        <button class="modal-close js-close-register" type="button" aria-label="농장 등록 닫기">×</button>
+        <button class="register-close js-close-register" type="button" aria-label="닫기">×</button>
       </div>
 
-      <form id="farmRegisterForm">
-        <div class="form-section">
-          <h3>01. 농장 기본 정보</h3>
-          <div class="form-grid two-col">
-            <label>농장명<input name="farmName" type="text" required placeholder="예: 그로우 농장" /></label>
-            <label>대표자명<input name="ownerName" type="text" required placeholder="성함을 입력해주세요" /></label>
-            <label>지역<input name="region" type="text" required placeholder="예: 충북 진천군" /></label>
-            <label>연락처<input name="phone" type="tel" required placeholder="010-0000-0000" /></label>
-          </div>
+      <form class="register-form" id="farmRegisterForm">
+        <div class="form-grid">
+          <label><span>농장명 *</span><input type="text" name="farmName" required placeholder="예: 그로우 농장" /></label>
+          <label><span>대표자명 *</span><input type="text" name="ownerName" required placeholder="성함을 입력해주세요" /></label>
+          <label><span>지역 *</span><input type="text" name="region" required placeholder="예: 충북 진천군" /></label>
+          <label><span>연락처 *</span><input type="tel" name="phone" required placeholder="010-0000-0000" /></label>
+          <label class="form-full"><span>주요 생산품 *</span><input type="text" name="products" required placeholder="예: 대추, 사과, 꿀" /></label>
+          <label class="form-full"><span>생산 시기</span><input type="text" name="season" placeholder="예: 9월–11월" /></label>
+          <label class="form-full"><span>농장과 상품 이야기</span><textarea name="story" rows="5" placeholder="어떤 상품을 어떻게 만들고 있는지, 지금 어떤 고민이 있는지 자유롭게 적어주세요."></textarea></label>
         </div>
 
-        <div class="form-section">
-          <h3>02. 생산 정보</h3>
-          <div class="form-grid two-col">
-            <label>주요 생산품<input name="products" type="text" required placeholder="예: 사과, 복숭아" /></label>
-            <label>주요 생산 시기<input name="season" type="text" placeholder="예: 8월 ~ 10월" /></label>
-          </div>
-          <label>농장과 생산품 소개<textarea name="story" rows="5" required placeholder="농장과 상품에 담긴 이야기를 편하게 적어주세요."></textarea></label>
-        </div>
-
-        <div class="form-section">
-          <h3>03. 현재 필요한 도움</h3>
+        <fieldset class="needs-fieldset">
+          <legend>어떤 도움이 필요한가요?</legend>
           <div class="check-grid">
             <label><input type="checkbox" name="needs" value="브랜드 기획" /><span>브랜드 기획</span></label>
             <label><input type="checkbox" name="needs" value="로고 디자인" /><span>로고 디자인</span></label>
             <label><input type="checkbox" name="needs" value="패키지 디자인" /><span>패키지 디자인</span></label>
-            <label><input type="checkbox" name="needs" value="제품 촬영" /><span>제품 촬영</span></label>
+            <label><input type="checkbox" name="needs" value="제품 콘텐츠" /><span>제품 콘텐츠</span></label>
             <label><input type="checkbox" name="needs" value="상세페이지" /><span>상세페이지</span></label>
-            <label><input type="checkbox" name="needs" value="쇼핑몰·웹사이트" /><span>쇼핑몰·웹사이트</span></label>
-            <label><input type="checkbox" name="needs" value="홍보 콘텐츠" /><span>홍보 콘텐츠</span></label>
-            <label><input type="checkbox" name="needs" value="아직 모르겠어요" /><span>아직 모르겠어요</span></label>
+            <label><input type="checkbox" name="needs" value="홍보물" /><span>홍보물</span></label>
           </div>
+        </fieldset>
+
+        <div class="prototype-note">
+          <strong>현재 등록 기능은 1차 프로토타입입니다.</strong>
+          <span>제출 정보는 이 브라우저에 임시 저장됩니다. 실제 운영 단계에서는 데이터베이스와 관리자 승인 기능을 연결합니다.</span>
         </div>
-
-        <label class="privacy-check">
-          <input type="checkbox" required />
-          <span>농장 등록 검토를 위한 개인정보 수집 및 이용에 동의합니다.</span>
-        </label>
-
-        <button class="button button-dark form-submit" type="submit">농장 등록 신청하기</button>
-        <p class="form-caption">현재 1차 웹 프로토타입에서는 등록 내용이 이 기기의 브라우저에 임시 저장됩니다. 실제 운영 전 Firebase 등 데이터베이스 연결이 필요합니다.</p>
+        <button class="button button-dark form-submit" type="submit">등록 신청하기</button>
       </form>
 
-      <div class="form-success" id="farmRegisterSuccess" hidden>
-        <span class="success-icon">✓</span>
-        <h3>농장 등록 신청이 저장되었습니다.</h3>
-        <p>프로토타입 등록이 완료되었습니다. 실제 운영 시 서버 저장 및 관리자 확인 기능으로 연결할 수 있습니다.</p>
+      <div class="register-success" id="farmRegisterSuccess" hidden>
+        <span>등록 완료</span>
+        <h3>농장 정보를<br />잘 받았습니다.</h3>
+        <p>현재는 프로토타입으로 이 브라우저에 임시 저장되었습니다.</p>
         <button class="button button-dark js-close-register" type="button">확인</button>
       </div>
     </section>

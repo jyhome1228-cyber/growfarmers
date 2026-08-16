@@ -1,0 +1,86 @@
+/* Grow Farmers typography hierarchy */
+:root{
+  --fs-display:clamp(46px,5vw,70px);
+  --fs-page:clamp(40px,4.6vw,62px);
+  --fs-section:clamp(32px,3.5vw,48px);
+  --fs-sub:clamp(22px,2vw,30px);
+  --fs-card:16px;
+  --fs-body:14px;
+  --fs-small:12px;
+  --fs-meta:10.5px;
+}
+
+body{font-size:var(--fs-body);line-height:1.7;letter-spacing:-.015em}
+.brand{font-size:20px;line-height:1;letter-spacing:-.045em}
+.desktop-nav{font-size:13px;font-weight:500;letter-spacing:-.015em}
+.cta,.button{font-size:12px;letter-spacing:-.01em}
+.eyebrow{font-size:10px;line-height:1.2;letter-spacing:.09em}
+
+.page-hero h1{font-size:var(--fs-display);line-height:1.06;letter-spacing:-.055em;max-width:820px}
+.page-hero p.lead{font-size:15px;line-height:1.78;max-width:640px}
+.page-banner h1{font-size:var(--fs-page);line-height:1.08;letter-spacing:-.05em;max-width:820px}
+.page-banner p{font-size:14px;line-height:1.78}
+.section-title{font-size:var(--fs-section);line-height:1.1;letter-spacing:-.045em}
+.section-head>p{font-size:13px;line-height:1.72}
+.intro-split .statement{font-size:var(--fs-section);line-height:1.12}
+.intro-split .copy{font-size:14px;line-height:1.82}
+.hero-note{font-size:18px;line-height:1.42}
+
+.feature-card h3{font-size:18px;line-height:1.35;font-weight:700}
+.feature-card p{font-size:12.5px;line-height:1.68}
+.project-info h3{font-size:16px;line-height:1.45;font-weight:700;letter-spacing:-.03em}
+.project-info p{font-size:12px;line-height:1.62}
+.project-tags span{font-size:10px}
+.project-placeholder strong{font-size:30px;line-height:1}
+.process-row h3{font-size:16px;line-height:1.35;font-weight:700}
+.process-row p{font-size:12.5px;line-height:1.62}
+.media-panel .text h2{font-size:var(--fs-sub);line-height:1.18;margin-top:0}
+.contact-panel h1{font-size:var(--fs-page);line-height:1.08}
+.contact-panel p,.farm-register-copy p{font-size:13.5px;line-height:1.78}
+.farm-register-copy h2{font-size:var(--fs-section);line-height:1.1}
+
+.portfolio-toolbar{font-size:12px;line-height:1.4}
+.portfolio-toolbar>div:first-child{display:flex;align-items:baseline;gap:5px;white-space:nowrap;font-size:13px;font-weight:500;color:var(--ink)}
+.portfolio-toolbar>div:first-child strong{font-size:26px;line-height:1;font-weight:750;letter-spacing:-.045em}
+.work-filter button{font-size:11px;font-weight:650;line-height:1}
+
+.footer-brand{font-size:15px}
+.footer-info,.footer-links{font-size:10.5px;line-height:1.75}
+.project-modal-copy h2{font-size:clamp(28px,3vw,42px);line-height:1.12}
+.project-modal-copy p{font-size:13px;line-height:1.78}
+
+@media(max-width:1080px){
+  .page-hero h1{font-size:clamp(42px,7vw,60px)}
+  .page-banner h1{font-size:clamp(38px,6vw,54px)}
+  .section-title,.intro-split .statement{font-size:clamp(30px,5vw,44px)}
+}
+
+@media(max-width:720px){
+  body{font-size:13.5px;line-height:1.72}
+  .brand{font-size:18px}
+  .mobile-menu{font-size:17px;line-height:1.35}
+  .page-hero h1{font-size:40px;line-height:1.08;letter-spacing:-.05em}
+  .page-hero p.lead{font-size:14px;line-height:1.72;margin-top:20px}
+  .page-banner{padding:58px 0 34px}
+  .page-banner h1{font-size:36px;line-height:1.1;letter-spacing:-.045em}
+  .page-banner p{font-size:13.5px;line-height:1.72;margin-top:18px}
+  .section-title,.intro-split .statement{font-size:30px;line-height:1.12}
+  .section-head>p,.intro-split .copy{font-size:13px}
+  .hero-note{font-size:14px}
+  .feature-card h3{font-size:17px;margin-top:28px}
+  .feature-card p{font-size:12px}
+  .project-info{padding:16px 16px 18px}
+  .project-info h3{font-size:15px;line-height:1.45}
+  .project-info p{font-size:11.5px}
+  .portfolio-toolbar{align-items:flex-start;flex-direction:column;gap:14px;padding:16px 0}
+  .portfolio-toolbar>div:first-child{font-size:12px;white-space:nowrap;display:flex;align-items:baseline}
+  .portfolio-toolbar>div:first-child strong{font-size:25px}
+  .work-filter{gap:7px}
+  .work-filter button{font-size:11px;min-height:34px;padding:0 13px}
+  .process-row h3{font-size:15px}
+  .process-row p{font-size:12px}
+  .contact-panel h1{font-size:36px}
+  .farm-register-copy h2{font-size:30px}
+  .project-modal-copy h2{font-size:28px}
+  .footer-info,.footer-links{font-size:10px}
+}

@@ -1,0 +1,28 @@
+name: Import Notion Cover Test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-notion-cover-test.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download cover
+        run: |
+          mkdir -p assets/projects
+          curl -L --fail --retry 2 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F41c9f719-3b9d-814f-8589-000344eebccf%2Fd86e4692-16a7-4950-a307-f9e6d05f7531%2Fimage.png?table=block&id=3729f719-3b9d-8095-929c-e61e2df5599d&cache=v2' -o assets/projects/01.png
+          file assets/projects/01.png
+      - name: Commit cover
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/projects/01.png
+          git diff --cached --quiet || git commit -m 'Import Notion portfolio cover 01'
+          git push

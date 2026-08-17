@@ -1,4 +1,5 @@
 @import url('./hero-fix.css');
 @import url('./sost-final.css');
 @import url('./spacing-fix.css');
+@import url('./service-icons.css');
 .brand{display:block;width:176px;height:30px;background:url('/growfarmers/assets/growfarmers-logo.svg') left center/contain no-repeat;font-size:0!important;line-height:0;color:transparent!important}.brand:hover{color:transparent!important}.footer-brand{display:block;width:170px;height:30px;background:#fff;mask:url('/growfarmers/assets/growfarmers-logo.svg') left center/contain no-repeat;-webkit-mask:url('/growfarmers/assets/growfarmers-logo.svg') left center/contain no-repeat;font-size:0!important;color:transparent!important}.hero-collage .big{object-position:center center}@media(max-width:720px){.brand{width:150px;height:26px}.footer-brand{width:145px;height:25px}}

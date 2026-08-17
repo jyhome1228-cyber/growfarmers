@@ -1,0 +1,23 @@
+/* Consistent editorial spacing between section labels and titles */
+.eyebrow + h1,
+.eyebrow + h2,
+.eyebrow + h3,
+.eyebrow + .section-title{
+  margin-top:18px!important;
+}
+.page-banner .eyebrow + h1,
+.page-hero .eyebrow + h1{
+  margin-top:22px!important;
+}
+@media(max-width:760px){
+  .eyebrow + h1,
+  .eyebrow + h2,
+  .eyebrow + h3,
+  .eyebrow + .section-title{
+    margin-top:12px!important;
+  }
+  .page-banner .eyebrow + h1,
+  .page-hero .eyebrow + h1{
+    margin-top:16px!important;
+  }
+}

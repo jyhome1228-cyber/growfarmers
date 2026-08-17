@@ -101,12 +101,15 @@ body{
 /* Forms */
 .farm-register-layout,.contact-layout{gap:22px}
 .farm-register-copy,.contact-panel,.form-card{border-radius:var(--radius);box-shadow:none}
-.farm-register-copy,.contact-panel{padding:38px}
+.farm-register-copy,.contact-panel{padding:38px;background:#f7f8f7;color:var(--ink);border:1px solid #e5e9e6}
+.farm-register-copy .eyebrow,.contact-panel .eyebrow{color:#60706a}
+.farm-register-copy p,.contact-panel p{color:var(--muted)}
 .form-card{padding:34px;border:1px solid #e5e9e6}
 .field{font-size:14px;font-weight:500}
 .field input,.field textarea,.field select{border-radius:var(--radius-sm);font-size:16px}
 .check-grid label{border-radius:var(--radius-sm);font-size:14px}
-.info-item{border-radius:var(--radius-sm)}
+.info-item{border-radius:var(--radius-sm);background:#fff;border:1px solid #e3e8e5}
+.info-item strong{color:var(--ink);font-weight:600}.info-item span{color:var(--muted)}
 
 /* Footer */
 .site-footer{margin-top:0}

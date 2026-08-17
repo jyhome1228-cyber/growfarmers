@@ -1,0 +1,1 @@
+Project detail pages share the common template and image gallery loader.

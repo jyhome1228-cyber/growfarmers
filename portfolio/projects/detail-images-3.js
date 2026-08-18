@@ -14,12 +14,30 @@ const A={
 "3739f7193b9d809bb477f52418da738d":["https://cdn.imweb.me/upload/S202410251a294b3f442b0/11b65785a38ad.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/e7d6e90e630e3.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/e8d5b6f255cb6.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/b589e3a609ce8.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/53612d35f5bf4.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/38caa57e13268.png"],
 "3739f7193b9d80adb4c1cef782710dba":["https://cdn.imweb.me/upload/S202410251a294b3f442b0/4349d201fceb5.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/89081bd69f040.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/b3edf839998be.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/762236709ce9d.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/a59f6101bec10.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/df6a6abb299be.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/fcae546528295.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/cb2cddd72b279.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/02e04aac7ff51.png","https://cdn.imweb.me/upload/S202410251a294b3f442b0/311476b1aa575.png"]
 };
+const ORDER={
+"3739f7193b9d80088a17cb6c667cb814":34,
+"3739f7193b9d80ef8f53fa2b3961390c":17,
+"3739f7193b9d8070b4a7ff4b5872b70a":36,
+"3739f7193b9d801b91e2eaaa90815cbe":14,
+"3739f7193b9d8053b911e29953efbb59":20,
+"3739f7193b9d80bf86dde75da5e2077e":22,
+"3729f7193b9d806a8371d2c219e21781":16,
+"3739f7193b9d80fd8717e7075daf65ed":15,
+"3739f7193b9d8048b780cbdb4906837c":19,
+"3739f7193b9d8012b088de30688dd414":23,
+"3739f7193b9d804f9ccac7aeeadc42fc":21,
+"3739f7193b9d809bb477f52418da738d":35,
+"3739f7193b9d80adb4c1cef782710dba":18
+};
 const id=location.pathname.split('/').filter(Boolean).slice(-1)[0],imgs=A[id];
 if(!imgs?.length)return;
+const index=document.getElementById('detailIndex');
+if(index&&ORDER[id])index.textContent='GROW FARMERS PROJECT · '+String(ORDER[id]).padStart(2,'0');
 const visual=document.querySelector('.project-visual');
 if(visual){visual.innerHTML=`<img src="${imgs[0]}" alt="프로젝트 대표 이미지">`;visual.classList.add('has-image')}
+document.querySelectorAll('.project-gallery').forEach(g=>g.remove());
 const body=document.getElementById('detailBody');
-if(body&&imgs.length>1&&!document.querySelector('.project-gallery')){
+if(body&&imgs.length>1){
   const g=document.createElement('div');g.className='project-gallery';
   g.innerHTML=imgs.slice(1).map((u,i)=>`<img src="${u}" alt="프로젝트 이미지 ${i+2}" loading="lazy">`).join('');
   body.insertAdjacentElement('afterend',g)

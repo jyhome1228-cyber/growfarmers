@@ -1,1 +1,41 @@
-.project-detail{padding:132px 0 112px}.project-head{max-width:760px;margin-bottom:56px}.project-head h1{margin:0;font-size:var(--fs-h1);font-weight:470;line-height:1.16;letter-spacing:-.045em}.detail-back{display:inline-flex;margin-bottom:28px;font-size:13px;font-weight:500;letter-spacing:.04em;color:var(--brand)}.project-visual{min-height:0;border-radius:12px;background:#f1f4f2;display:grid;place-items:center;color:var(--brand);margin-bottom:72px;overflow:hidden}.project-copy{max-width:760px}.project-copy h2{font-size:var(--fs-h2);font-weight:510;line-height:1.3;letter-spacing:-.038em;margin:72px 0 20px}.project-copy p{font-size:17px;line-height:1.75;color:#59615d;margin:0 0 28px}.project-gallery{max-width:980px;margin-top:64px;gap:24px}.project-gallery img,.project-visual.has-image img{border-radius:12px!important}@media(max-width:760px){.project-detail{padding:92px 0 80px}.project-head{margin-bottom:40px}.project-visual{margin-bottom:48px;border-radius:10px}.project-copy h2{font-size:clamp(24px,7.5vw,30px);margin-top:52px}.project-copy p{font-size:16px;line-height:1.7}.project-gallery{gap:16px;margin-top:44px}.project-gallery img,.project-visual.has-image img{border-radius:10px!important}}
+.project-detail{padding:112px 0 132px}
+.project-detail>.shell{width:min(var(--max),calc(100% - var(--gut)*2));margin:0 auto}
+.project-head{max-width:980px;margin:0 0 56px}
+.project-head .eyebrow{margin-bottom:16px}
+.project-head h1{margin:0;max-width:940px;font-size:clamp(40px,4.6vw,66px);font-weight:500;line-height:1.12;letter-spacing:-.05em;text-wrap:balance}
+.detail-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:34px;padding-bottom:3px;border-bottom:1px solid rgba(20,72,55,.35);font-size:12px;font-weight:650;letter-spacing:.03em;color:var(--brand)}
+.project-visual{width:100%;min-height:0;margin:0 0 72px;border-radius:16px;background:#f1f4f2;display:grid;place-items:center;overflow:hidden;color:var(--brand)}
+.project-visual.has-image{background:none;border:0}
+.project-visual.has-image img{width:100%;height:auto;display:block;border-radius:16px!important}
+.project-copy{width:min(820px,100%);margin:0 auto;padding:6px 0 0}
+.project-copy:empty{display:none}
+.project-copy h2,.project-copy h3{margin:64px 0 20px;font-size:clamp(27px,2.35vw,34px);font-weight:520;line-height:1.35;letter-spacing:-.038em;color:var(--ink)}
+.project-copy h2:first-child,.project-copy h3:first-child{margin-top:0}
+.project-copy p{margin:0 0 28px;font-size:17px;line-height:1.82;letter-spacing:-.018em;color:#59615d;word-break:keep-all}
+.project-copy p:last-child{margin-bottom:0}
+.project-gallery{width:100%;max-width:none!important;margin:80px 0 0!important;display:grid;gap:28px!important}
+.project-gallery img{width:100%;height:auto;display:block;border-radius:16px!important}
+.project-detail-end{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;margin-top:96px;padding-top:30px;border-top:1px solid var(--line)}
+.project-detail-end p{margin:0;font-size:14px;line-height:1.7;color:var(--muted)}
+.project-detail-end a{white-space:nowrap}
+@media(max-width:900px){
+  .project-detail{padding:88px 0 104px}
+  .project-head{max-width:760px;margin-bottom:44px}
+  .project-visual{margin-bottom:54px;border-radius:12px}
+  .project-visual.has-image img,.project-gallery img{border-radius:12px!important}
+  .project-gallery{margin-top:58px!important;gap:20px!important}
+  .project-detail-end{margin-top:72px}
+}
+@media(max-width:640px){
+  .project-detail{padding:62px 0 84px}
+  .project-head{margin-bottom:32px}
+  .detail-back{margin-bottom:24px}
+  .project-head h1{font-size:clamp(34px,10vw,46px);line-height:1.14}
+  .project-visual{margin-bottom:40px;border-radius:10px}
+  .project-visual.has-image img,.project-gallery img{border-radius:10px!important}
+  .project-copy{width:100%}
+  .project-copy h2,.project-copy h3{font-size:25px;margin:48px 0 16px}
+  .project-copy p{font-size:16px;line-height:1.76;margin-bottom:22px}
+  .project-gallery{margin-top:44px!important;gap:14px!important}
+  .project-detail-end{grid-template-columns:1fr;align-items:start;margin-top:56px;padding-top:24px}
+}

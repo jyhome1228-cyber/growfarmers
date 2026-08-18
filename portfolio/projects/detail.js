@@ -51,6 +51,8 @@
   const title=document.getElementById('detailTitle');
   const index=document.getElementById('detailIndex');
   const body=document.getElementById('detailBody');
+  const shell=document.querySelector('.project-detail > .shell');
+  const visual=document.querySelector('.project-visual');
 
   if(meta){
     if(title)title.textContent=meta[0];
@@ -79,9 +81,7 @@
       try{
         const all=await window.loadGFProjectDetails();
         const project=Array.isArray(all)?all.find(item=>item&&item.title===meta[0]):null;
-        if(project?.blocks?.length){
-          body.innerHTML=renderBlocks(project.blocks);
-        }
+        if(project?.blocks?.length)body.innerHTML=renderBlocks(project.blocks);
       }catch(error){
         console.error('GROW FARMERS project copy load failed:',error);
       }
@@ -89,6 +89,43 @@
     if(!body.innerHTML.trim()&&meta){
       body.innerHTML=`<p>${escapeHtml(meta[0])} 프로젝트입니다. 상품이 가진 특징과 원산지, 사용 맥락을 정리해 브랜드 인상과 패키지 경험이 자연스럽게 연결되도록 설계했습니다.</p><p>패키지 한 장면에 그치지 않고 실제 판매 환경에서 필요한 정보 전달과 선물성, 제품군 확장 가능성까지 고려해 전체 비주얼 시스템을 구성했습니다.</p>`;
     }
+  }
+
+  if(shell&&!shell.querySelector('.project-detail-layout')){
+    const head=shell.querySelector('.project-head');
+    const layout=document.createElement('div');
+    layout.className='project-detail-layout';
+
+    const sidebar=document.createElement('aside');
+    sidebar.className='project-sidebar';
+
+    const media=document.createElement('section');
+    media.className='project-media';
+    media.setAttribute('aria-label','프로젝트 이미지');
+
+    if(head)sidebar.appendChild(head);
+    if(body)sidebar.appendChild(body);
+
+    const actions=document.createElement('div');
+    actions.className='project-side-actions';
+    actions.innerHTML='<a href="../../">전체 프로젝트</a><a class="is-primary" href="../../../contact/">프로젝트 문의</a>';
+    sidebar.appendChild(actions);
+
+    if(visual)media.appendChild(visual);
+
+    layout.appendChild(sidebar);
+    layout.appendChild(media);
+    shell.prepend(layout);
+
+    shell.querySelectorAll('.project-detail-end').forEach(el=>el.remove());
+
+    const moveGalleries=()=>{
+      shell.querySelectorAll('.project-gallery').forEach(gallery=>{
+        if(gallery.parentElement!==media)media.appendChild(gallery);
+      });
+    };
+    moveGalleries();
+    new MutationObserver(moveGalleries).observe(shell,{childList:true,subtree:true});
   }
 
   const nav=document.querySelector('.desktop-nav');
@@ -131,15 +168,10 @@
     btn.addEventListener('click',()=>mobile.classList.toggle('is-open'));
   }
 
-  if(body&&!document.querySelector('.project-detail-end')){
-    const end=document.createElement('div');
-    end.className='project-detail-end';
-    end.innerHTML='<p>브랜드와 패키지, 제품 콘텐츠까지 한 흐름으로 연결하는 작업이 필요하신가요?</p><a class="button dark" href="../../../contact/">프로젝트 문의하기</a>';
-    body.insertAdjacentElement('afterend',end);
-  }
-
   ['../detail-images.js','../detail-images-2.js','../detail-images-3.js'].forEach(src=>{
     if(document.querySelector(`script[src="${src}"]`))return;
-    const s=document.createElement('script');s.src=src;document.body.appendChild(s);
+    const s=document.createElement('script');
+    s.src=src;
+    document.body.appendChild(s);
   });
 })();

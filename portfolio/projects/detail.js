@@ -1,4 +1,9 @@
 (async()=>{
+  const commonScript=document.createElement('script');
+  commonScript.src='../../../script.js';
+  commonScript.async=false;
+  document.head.appendChild(commonScript);
+
   const FAV='https://cdn.imweb.me/upload/S20260608d59dd46fbc08b/a4aa6f5955618.png';
   [['icon','image/png'],['shortcut icon','image/png'],['apple-touch-icon','']].forEach(([rel,type])=>{
     let l=document.querySelector(`link[rel="${rel}"]`);
@@ -163,7 +168,7 @@
 
     const mobile=document.createElement('div');
     mobile.className='mobile-menu';
-    mobile.innerHTML='<a href="../../../about/">그로우파머스</a><a href="../../../service/">우리가 하는 일</a><a href="../../">포트폴리오</a><a href="../../../farms/">농장과 브랜드</a><a href="../../../news/">뉴스</a><a href="../../../how-we-work/">함께 일하는 방법</a><a href="../../../contact/">함께하기</a>';
+    mobile.innerHTML='<a href="../../../about/">그로우파머스</a><a href="../../../service/">우리가 하는 일</a><a href="../../">포트폴리오</a><a href="../../../farms/">농장과 브랜드</a><a href="../../../book/">농부책방</a><a href="../../../news/">뉴스</a><a href="../../../how-we-work/">함께 일하는 방법</a><a href="../../../contact/">함께하기</a>';
     document.querySelector('.site-header')?.insertAdjacentElement('afterend',mobile);
     btn.addEventListener('click',()=>mobile.classList.toggle('is-open'));
   }

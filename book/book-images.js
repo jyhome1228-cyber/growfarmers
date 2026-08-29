@@ -58,4 +58,9 @@ if (currentIssue && typeof FARMERS_BOOK !== "undefined" && FARMERS_BOOK[currentI
 
 const farmersBookVolume2Script = document.createElement("script");
 farmersBookVolume2Script.src = "./book-volume2.js";
+farmersBookVolume2Script.addEventListener("load", () => {
+  const farmersBookVolume2ExpandedScript = document.createElement("script");
+  farmersBookVolume2ExpandedScript.src = "./book-volume2-expanded.js";
+  document.body.appendChild(farmersBookVolume2ExpandedScript);
+});
 document.body.appendChild(farmersBookVolume2Script);

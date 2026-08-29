@@ -55,3 +55,7 @@ if (currentIssue && typeof FARMERS_BOOK !== "undefined" && FARMERS_BOOK[currentI
   const readerImage = document.getElementById("readerImage");
   if (readerImage) readerImage.src = FARMERS_BOOK[currentIssue].image;
 }
+
+const farmersBookVolume2Script = document.createElement("script");
+farmersBookVolume2Script.src = "./book-volume2.js";
+document.body.appendChild(farmersBookVolume2Script);

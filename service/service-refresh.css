@@ -27,19 +27,19 @@
 /* FLOW */
 .service-flow{padding:104px 0 112px;background:#123f31;color:#fff}
 .flow-head{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(250px,360px);gap:clamp(30px,4.5vw,68px);align-items:end;margin-bottom:42px}
-.flow-head .eyebrow{margin:0;color:#abc5b9;align-self:start}
-.flow-head h2{margin:0;max-width:620px;font-size:clamp(27px,2.4vw,32px);font-weight:500;line-height:1.38;letter-spacing:-.04em}
-.flow-head>p{margin:0;color:rgba(255,255,255,.68);font-size:14px;line-height:1.75;word-break:keep-all}
-.flow-media{margin-bottom:24px!important}
+.flow-head .eyebrow{margin:0;color:#b8ccc2;align-self:start}
+.flow-head h2{margin:0;max-width:620px;font-size:clamp(27px,2.4vw,32px);font-weight:500;line-height:1.38;letter-spacing:-.04em;color:#fff}
+.flow-head>p{margin:0;color:rgba(255,255,255,.72);font-size:14px;line-height:1.75;word-break:keep-all}
+.flow-media{margin-bottom:28px!important}
 .flow-media img{width:100%;aspect-ratio:2.25/1;object-fit:cover;display:block;border-radius:10px;background:#274d41}
-.flow-media figcaption{color:rgba(255,255,255,.5)}
-.flow-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.23);border-left:1px solid rgba(255,255,255,.23)}
-.flow-card{min-height:330px;padding:28px 30px 30px;border-right:1px solid rgba(255,255,255,.23);border-bottom:1px solid rgba(255,255,255,.23);display:flex;flex-direction:column}
-.flow-no{display:block;margin-bottom:46px;color:#a7c2b5;font-size:11px;font-weight:650;letter-spacing:.12em}
-.flow-card h3{max-width:430px;margin:0;font-size:clamp(20px,1.6vw,24px);font-weight:520;line-height:1.42;letter-spacing:-.032em}
-.flow-card>p{max-width:520px;margin:14px 0 0;color:rgba(255,255,255,.69);font-size:14px;line-height:1.72;word-break:keep-all}
+.flow-media figcaption{color:rgba(255,255,255,.55)}
+.flow-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;border:0}
+.flow-card{min-width:0;min-height:360px;padding:28px 24px 24px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#fff;color:#1d2923;display:flex;flex-direction:column;box-shadow:0 12px 32px rgba(0,0,0,.06)}
+.flow-no{display:block;margin-bottom:42px;color:#73817a;font-size:11px;font-weight:650;letter-spacing:.12em}
+.flow-card h3{max-width:100%;margin:0;font-size:clamp(19px,1.3vw,22px);font-weight:560;line-height:1.42;letter-spacing:-.032em;color:#1c2822}
+.flow-card>p{max-width:100%;margin:14px 0 0;color:#657069;font-size:13.5px;line-height:1.72;word-break:keep-all}
 .flow-card ul{display:flex;gap:6px;flex-wrap:wrap;margin:auto 0 0;padding:26px 0 0;list-style:none}
-.flow-card li{padding:6px 9px;border:1px solid rgba(255,255,255,.24);border-radius:999px;color:rgba(255,255,255,.78);font-size:10.5px;line-height:1.2}
+.flow-card li{padding:6px 9px;border:1px solid #d7dfda;border-radius:999px;background:#fff;color:#5d6963;font-size:10.5px;line-height:1.2}
 
 /* CAPABILITIES */
 .capability-section{padding:108px 0 116px;background:#fff}
@@ -63,6 +63,11 @@
 .service-cta-inner h2{margin:0;max-width:650px;font-size:clamp(26px,2.3vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.038em}
 .service-cta-copy>p{margin:0;color:#66716b;font-size:14px;line-height:1.76;word-break:keep-all}
 .service-cta-copy>div{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+
+@media(max-width:1220px){
+  .flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow-card{min-height:310px}
+}
 
 @media(max-width:1120px){
   .service-hero-grid{grid-template-columns:160px minmax(0,1fr) minmax(280px,360px);gap:34px}
@@ -103,11 +108,12 @@
   .flow-head{display:block;margin-bottom:32px}
   .flow-head h2{margin-top:16px;font-size:clamp(25px,7vw,31px)}
   .flow-head>p{margin-top:16px;font-size:13.5px}
-  .flow-media{margin-bottom:16px!important}
+  .flow-media{margin-bottom:18px!important}
   .flow-media img{aspect-ratio:16/9;border-radius:8px}
-  .flow-grid{grid-template-columns:1fr}
-  .flow-card{min-height:290px;padding:24px 20px 26px}
-  .flow-no{margin-bottom:36px}
+  .flow-grid{grid-template-columns:1fr;gap:10px}
+  .flow-card{min-height:0;padding:22px 18px 20px;border-radius:10px}
+  .flow-no{margin-bottom:24px}
+  .flow-card>p{font-size:13.5px}
 
   .capability-section{padding:78px 0 84px}
   .capability-intro h2{font-size:clamp(24px,6.8vw,30px)}
